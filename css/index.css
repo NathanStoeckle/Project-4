@@ -1,0 +1,116 @@
+/* Using fonts found from google fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body, html{
+    min-height: 100%;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    background: white;
+    color: white;
+    position: relative;
+    background-color: rgb(58, 58, 58);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+footer{
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Headings for title */
+h1, h2{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    font-size: 2.5em
+}
+
+p{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+a{
+    transition: all 0.1s ease;
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.5;
+    color: lightblue;
+}
+
+a:visited{
+    color: white;
+}
+
+/* Refers to the background image of the main body */
+
+.wrappers{
+    width: 100%;
+}
+
+
+/* This is for the buttons */
+
+.button{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 1.2em;
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.button:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+#center{
+    text-align: center;
+}
+
+/* Animation */
+#button1{
+    animation-delay: 2s;
+    animation: 1s ease-out 0s 1 buttonload;
+}
+#button2{
+    animation: 1.5s ease-out 0s 1 buttonload;
+}
+#button3{
+    animation: 2s ease-out 0s 1 buttonload;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@keyframes buttonload{ 
+    0%{
+        transform: translateY(200%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
